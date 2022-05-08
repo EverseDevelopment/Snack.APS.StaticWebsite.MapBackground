@@ -1,0 +1,13 @@
+.map-docking-panel {
+    height: 400px;
+    width: 500px;
+    // resize: auto;
+    left: 10px;
+    top: 10px;
+    .content {
+        height: calc(100% - 45px);
+        .react-content {
+            height: inherit;
+        }
+    }
+}

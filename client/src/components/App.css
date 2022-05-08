@@ -1,0 +1,211 @@
+html, body, #root, #root>div {
+  height: 100vh;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.card-shadow {
+  box-shadow: 1px 1px 25px #dbdbdb;
+}
+
+.css-nvf14r-ToastContainer {
+  z-index: 10000!important;
+}
+
+#menu-list-grow > li:hover {
+  background-color: #2b455f;
+  color: white;
+}
+
+.css-1cbc3rp-Icon {
+  background-color: #f50057!important;
+}
+  
+.css-1e3oc50-ToastElement {
+  color: #f50057!important;
+  background-color: #e0c7d1!important;
+}
+
+.redux-toastr .toastr .rrt-middle-container {
+  font-size: 13px!important;
+  color: #f50057!important;
+}
+
+.redux-toastr .toastr.rrt-error {
+  background-color: #e0c7d1!important;
+}
+
+.redux-toastr .toastr .close-toastr {
+  color: #f50057!important;
+}
+
+.redux-toastr .toastr .rrt-left-container .toastr-icon {
+  fill: #f50057!important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.auth-container {
+  box-shadow: 3px 3px 8px #c5c5c59d;
+  border-radius: 5px;
+  width: 350px!important;
+  /* margin-top: 25vh; */
+}
+
+.auth-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-only-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-img img {
+  width: 70%;
+}
+
+.about-copyright p {
+  margin-bottom: 0!important;
+}
+
+.about-version {
+  margin-top: 9%;
+}
+
+.about-copyright {
+  margin-top: 10%;
+}
+.top-header-wrapper {
+  width: 100%;
+  margin: auto 0!important;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #2d2d2d;
+  color: white;
+  font-weight: bold;
+}
+
+.top-header:hover {
+  color: #00bfff;
+  /* font-size: 17px; */
+  cursor: pointer;
+}
+.topbar-selected {
+  color: #00bfff;
+}
+#show-env-bg-button .adsk-button-icon{
+  background-image: url('../images/list_icon.png')!important;
+  background-repeat: no-repeat;
+  padding-top: 0;
+}
+
+#map-button .adsk-button-icon{
+  background-image: url('../images/map-solid.png')!important;
+  background-repeat: no-repeat;
+  padding-top: 0;
+}
+
+.map-switch-back-map {
+  position: absolute;
+  z-index: 1;
+  bottom: 70px;
+  right: 40px;
+  background-color: #282c34;
+}
+
+.map-switch-dimension-type {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  right: 40px;
+  background-color: #282c34;
+}
+
+.map-switch-map-type {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 40px;
+  background-color: #282c34;
+}
+
+.map-rotation-regulator {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 10px;
+}
+
+.rotating-slider {
+  position: absolute!important;
+  width: 150px!important;
+  left: 65px;
+}
+
+.map-scale-regulator {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 10px;
+}
+
+.scale-slider {
+  position: absolute!important;
+  width: 150px!important;
+  left: 65px;
+}
+
+#rotating-slider, #scale-slider {
+  color: black!important;
+}
+
+@media (max-width: 400px){
+  .auth-container {
+    box-shadow: none;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

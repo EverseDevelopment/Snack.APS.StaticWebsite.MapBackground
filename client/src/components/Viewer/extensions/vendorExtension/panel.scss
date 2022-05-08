@@ -1,0 +1,39 @@
+.vendor-docking-panel {
+    height: 180px;
+    width: 250px;
+    resize: auto;
+    left: 10px;
+    top: 370px;
+
+    .content {
+        height: calc(100% - 35px);
+        background-color: rgba(34,34,34,.9);
+        overflow: auto;
+        .react-content {
+            table {
+                thead {
+                    background-color: rgb(44,44,44);
+                    border-bottom: 1px solid rgba(34,34,34,.8);
+                }
+                width: 100%;
+                th, td {
+                    padding: 5px 10px;
+                }
+                tbody {
+                    tr:nth-child(odd) {
+                        background-color: rgb(48,48,48);
+                    }
+                }
+            }
+        }
+    }
+    .docking-panel-close {
+        display: none;
+    }
+    .docking-panel-title {
+        font-weight: bold;
+    }
+    .docking-panel-footer {
+        z-index: 10;
+    }
+}

@@ -1,0 +1,25 @@
+{
+	"name": "DF.Viewer",
+	"version": "1.0.0",
+	"scripts": {
+		"client": "cd client && yarn start",
+		"server": "nodemon server.js",
+		"dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+	},
+	"dependencies": {
+		"async.eachlimit": "^0.5.2",
+		"body-parser": "^1.18.3",
+		"connect-busboy": "0.0.2",
+		"express": "^4.16.4",
+		"forge-apis": "^0.8.5",
+		"fs-extra": "^10.0.0",
+		"nodemon": "^2.0.7",
+		"path": "^0.12.7",
+		"request": "^2.88.2",
+		"request-promise": "^4.2.6",
+		"yarn": "^1.22.10"
+	},
+	"devDependencies": {
+		"concurrently": "^4.0.1"
+	}
+}
