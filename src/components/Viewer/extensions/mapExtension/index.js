@@ -1,6 +1,7 @@
 import React, {useState, useRef, useCallback} from 'react';
 import {connect} from 'react-redux';
 import mapboxgl from "mapbox-gl";
+import {mapboxToken} from '../../../../constants/dummyData';
 // Material UI
 import {withStyles} from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
@@ -22,7 +23,7 @@ import {
     setMapDimension
 } from '../../../../actions/viewerActions';
 
-const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN
+const MAPBOX_TOKEN = mapboxToken
 // eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
