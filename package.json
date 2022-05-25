@@ -1,25 +1,39 @@
 {
-	"name": "DF.Viewer",
-	"version": "1.0.0",
-	"scripts": {
-		"client": "cd client && yarn start",
-		"server": "nodemon server.js",
-		"dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
-	},
-	"dependencies": {
-		"async.eachlimit": "^0.5.2",
-		"body-parser": "^1.18.3",
-		"connect-busboy": "0.0.2",
-		"express": "^4.16.4",
-		"forge-apis": "^0.8.5",
-		"fs-extra": "^10.0.0",
-		"nodemon": "^2.0.7",
-		"path": "^0.12.7",
-		"request": "^2.88.2",
-		"request-promise": "^4.2.6",
-		"yarn": "^1.22.10"
-	},
-	"devDependencies": {
-		"concurrently": "^4.0.1"
-	}
+  "name": "3DViewer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "node-sass": "^4.0.0",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^16.14.0",
+    "react-map-gl": "^6.1.16",
+    "react-map-gl-geocoder": "^2.1.6",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^2.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "worker-loader": "^3.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
