@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { HashRouter as Router, Switch } from "react-router-dom";
 import Viewer from "./Viewer/Viewer";
 import Layout from "../middleware/Layout";
 import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";

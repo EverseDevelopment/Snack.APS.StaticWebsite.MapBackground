@@ -16,9 +16,8 @@ function launchViewer(div, urn, id) {
     
     
     var options = {
-      env: 'MD20ProdUS',
+      env: 'AutodeskProduction',
       'accessToken': token.access_token,
-      api: 'streamingV2'
     };
 
     Autodesk.Viewing.Initializer(options, () => {
