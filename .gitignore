@@ -2,3 +2,4 @@
 /build
 .env.local
 .env
+src/constants/
