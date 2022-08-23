@@ -15,7 +15,7 @@ const initialState = {
     viewerAuth: null,
     hasBackgroundMap: true,
     mapType: 0,
-    mapLocation: {lat: 52.52, lng: 13.4},
+    mapLocation: {lat: 25.76006433447789, lng: -80.19442552645981},
     isLocationChanged: false,
     variant: 0,
     total: 0,

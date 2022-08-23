@@ -154,7 +154,7 @@ const mapContent = (props) => {
             props.viewer.overlays.addMesh(buildingsmesh, 'buildingScene');
             buildingsmesh.geometry.computeBoundingBox();
             const heightPlane3D = (buildingsmesh.geometry.boundingBox.min.z + buildingsmesh.geometry.boundingBox.max.z) / 2
-            buildingsmesh.position.set(-offsetLng, offsetLat, heightPlane3D + boundingBoxHeight - 150);
+            buildingsmesh.position.set(-offsetLng, offsetLat, heightPlane3D + boundingBoxHeight);
             buildingsmesh.geometry.center();
         } catch (error) {
             throw error;
@@ -327,8 +327,10 @@ const mapContent = (props) => {
         if (!props.viewer.overlays.hasScene('map')) {
             props.viewer.overlays.addScene('map');
         }
-        boundingBoxHeight = props.viewer.model.getData().modelSpaceBBox.min.z;
-        
+        const modelBoundingBox = props.viewer.model.getData().modelSpaceBBox;
+        // Get center(z value) of the Building BoundingBox and add 2.5(Map cubic's average height)
+        // - means the bottom of the revit file
+        boundingBoxHeight = - ((modelBoundingBox.max.z - modelBoundingBox.min.z) / 2 + 2.5) ;        
         const tilex = [-1, 0, 1];
         const tiley = [-1, 0, 1];
         tilex.forEach(x => {
@@ -346,7 +348,7 @@ const mapContent = (props) => {
             })
         })
         window.tiles = tiles;
-        tiles.position.set(-offsetLng, offsetLat, boundingBoxHeight - 150);
+        tiles.position.set(-offsetLng, offsetLat, boundingBoxHeight);
         tiles.scale.set(scale2D, scale2D, 1);
         props.viewer.overlays.addMesh(tiles, 'map');
     }

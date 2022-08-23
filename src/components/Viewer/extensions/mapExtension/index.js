@@ -103,8 +103,8 @@ const panelContent = (props) => {
     }
 
     const [viewport, setViewport] = useState({
-        latitude: 52.52,
-        longitude: 13.4,
+        latitude: 25.76006433447789,
+        longitude: -80.19442552645981,
         zoom: 8,
         transitionInterpolator: new FlyToInterpolator()
     });

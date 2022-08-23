@@ -5,13 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from "./components/App";
 import { Provider } from "react-redux";
 import { configureStore } from "./store";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 
 export const store = configureStore();
 
 const SettingsContext = createContext();
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#2b455f",
