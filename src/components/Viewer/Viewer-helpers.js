@@ -14,7 +14,6 @@ function launchViewer(div, urn, id) {
 
   getToken.accessToken.then((token) => {
     
-    
     var options = {
       env: 'AutodeskProduction',
       'accessToken': token.access_token,
