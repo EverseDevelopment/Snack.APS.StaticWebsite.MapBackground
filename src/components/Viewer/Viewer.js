@@ -58,7 +58,9 @@ export default function Viewer() {
     <Box mt={3} className={classes.viewerContainer}>
       <img className={classes.info} src={InfoImg} alt="info" onClick={handleInfoModal} />
       <div className={classes.viewer} id="viewerDiv" />
-      <img className={classes.logo} src={Logo} alt="logo" />
+      <a href="https://www.e-verse.com" target={"_blank"}>
+        <img className={classes.logo} src={Logo} alt="logo" />
+      </a>
       <InfoModal open={isOpen} handleClose={handleInfoModal} />
     </Box>
   );
