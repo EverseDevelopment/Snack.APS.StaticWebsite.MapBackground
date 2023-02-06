@@ -31,7 +31,7 @@ jobs:
         uses: finnp/create-file-action@1.0.0
         env:
             FILE_NAME: "./src/constants/dummyData.js"
-            FILE_BASE64: ${{secret.DUMMY_SECRET_B64}}
+            FILE_BASE64: ${{secrets.DUMMY_SECRET_B64}}
       - name: Install dependencies
         run: yarn
       - name: Build
