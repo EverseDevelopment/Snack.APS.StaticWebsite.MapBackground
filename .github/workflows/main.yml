@@ -28,10 +28,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Create File
-        uses: finnp/create-file-action@1.0.0
-        env:
-            FILE_NAME: "./src/constants/dummyData.js"
-            FILE_BASE64: ${{secrets.DUMMY_SECRET_B64}}
+        run: echo ${{secrets.DUMMY_SECRET_B64}} | base64 --decode > "./src/constants/dummyData.js"
       - name: Install dependencies
         run: yarn
       - name: Build
