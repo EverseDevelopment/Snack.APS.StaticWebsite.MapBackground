@@ -1,6 +1,6 @@
 # Forge Map Background
 
-[<img src="https://s3.amazonaws.com/everse.assets/Snack.Forge.Map.Background.png">](https://github.com/EverseDevelopment/Snack.APS.StaticWebsite.MapBackground/wiki)
+[<img src="https://s3.amazonaws.com/everse.assets/GithubReadme/Snack.Forge.Map.Background.png">](https://github.com/EverseDevelopment/Snack.APS.StaticWebsite.MapBackground/wiki)
 <br/>
 
 # About
@@ -30,6 +30,6 @@ We are an international mix of AEC professionals, product designers, and softwar
 
 <p align="center" width="100%">
     <a href="https://www.e-verse.com/">
-    <img src="https://github.com/EverseDevelopment/DynaForge/blob/main/Assets/e-verse_logo_no%20slogan.jpg" width="732" height="271" align="center">
+    <img src="https://s3.amazonaws.com/everse.assets/GithubReadme/e-verse_logo_no+slogan.jpg" align="center">
     </a>
 </p>
